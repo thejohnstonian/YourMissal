@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Aptos';
+    src: url("Aptos.ttf");
+}
+
+* {
+    font-family: 'Aptos', Arial, sans-serif;
+}
+
+.divHead {
+    text-align: center;
+}
+
+#tblCal {
+    border: 1px solid black;
+}
+
+.calRow {
+    border: 1px solid black;
+}
+
+.calCell {
+    border: 1px solid black;
+    min-width: 70px;
+    min-height: 70px;
+}
+
+.calDateContent {
+    text-align: center;
+}
+
+.calDateInset {
+    border: 1px solid black;
+    padding: 4px;
+    max-height: 25%;
+    max-width: 25%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.calLgnd {
+    text-align: center;
+}
+
+.divSect {
+    display: flex;
+    align-content: space-between;
+}
+
+.divCalOverview {
+    margin: auto;
+}

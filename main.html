@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <title>YourMissal</title>
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="loadCal()">
+    <div class="divHead">
+        <h1>YourMissal</h1>
+    </div>
+
+    <div id="mainCal" class="divSect">
+        <div id="divCal">
+            <h2 id="calHead" style="text-align: center"><span id="calHeadMonth"></span> <span id="calHeadYear"></span></h2>
+            <table id="tblCal" class="divCalOverview">
+                <tr class="calRow" id="calRowLgnd">
+                    <td class="calLgnd" id="calLgnd0">Sunday</td>
+                    <td class="calLgnd" id="calLgnd1">Monday</td>
+                    <td class="calLgnd" id="calLgnd2">Tuesday</td>
+                    <td class="calLgnd" id="calLgnd3">Wednesday</td>
+                    <td class="calLgnd" id="calLgnd4">Thursday</td>
+                    <td class="calLgnd" id="calLgnd5">Friday</td>
+                    <td class="calLgnd" id="calLgnd6">Saturday</td>
+                </tr>
+                <tr class="calRow" id="calRowA">
+                    <td class="calCell" id="a0"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="a1"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="a2"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="a3"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="a4"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="a5"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="a6"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                </tr>
+                <tr class="calRow" id="calRowB">
+                    <td class="calCell" id="b0"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="b1"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="b2"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="b3"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="b4"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="b5"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="b6"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                </tr>
+                <tr class="calRow" id="calRowC">
+                    <td class="calCell" id="c0"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="c1"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="c2"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="c3"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="c4"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="c5"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="c6"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                </tr>
+                <tr class="calRow" id="calRowD">
+                    <td class="calCell" id="d0"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="d1"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="d2"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="d3"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="d4"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="d5"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="d6"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                </tr>
+                <tr class="calRow" id="calRowE">
+                    <td class="calCell" id="e0"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="e1"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="e2"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="e3"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="e4"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="e5"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="e6"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                </tr>
+                <tr class="calRow" id="calRowF">
+                    <td class="calCell" id="f0"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="f1"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="f2"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="f3"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="f4"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="f5"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                    <td class="calCell" id="f6"><div class="calDateInset"></div><div class="calDateContent"></div></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="divTodayIs" style="text-align: center" class="divCalOverview">
+            <p id="txtTodayIs">Today is <span id="txtDayOfWeek">Sunday</span>, <span id="txtMonth">January</span></p>
+            <p id="txtDay" style="font-size: 72pt">0</p>
+            <p id="txtYear">0</p>
+        </div>
+
+    </div>
+
+    <div id="divFeastBanner">
+        <h2>Today is <span id="txtFeastName"></span></h2>
+        <div id="divFeastImg"></div>
+        <div id="divFeastInfo"></div>
+    </div>
+
+</body>
